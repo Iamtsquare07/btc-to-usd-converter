@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/9783530849.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/3.0.0-rc.0/web3.min.js"></script>
+    <title>Bitcoin Converter</title>
+</head>
+
+<body>
+    <h1>Bitcoin To USD Converter</h1>
+    <div class="btc-converter">
+        <div id="wallet">Connect Wallet</div>
+        <h3>Convert Bitcoin to United States Dollar</h3>
+        <div class="convert-fields">
+            <div id="btc">
+                <i class="fa-brands fa-bitcoin"></i>
+                <input type="text" id="btc-input" placeholder="0" value="1">
+            </div>
+            <div id="arrows"><i class="fa-solid fa-arrow-right-arrow-left"></i></div>
+            <div id="dollars">
+                <i class="fa-solid fa-dollar-sign"></i>
+                <input type="text" id="usd-input" placeholder="0">
+            </div>
+        </div>
+        <button id="convert-button">Convert</button>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js" defer></script>
+    <script type="module" src="./bitcoinConverter.js" defer></script>
+</body>
+
+</html>

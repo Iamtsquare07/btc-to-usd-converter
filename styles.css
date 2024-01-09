@@ -32,22 +32,6 @@ h4 {
     margin-left: -10px;
 }
 
-#wallet {
-    position: fixed;
-    bottom: 5px;
-    right: 110px;
-    background-color: #010983;
-    border-radius: 25px;
-    padding: 7px;
-    cursor: pointer;
-    font-weight: 600;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-#wallet:hover {
-    background-color: #1b37b4;
-}
-
 .btc-converter:hover {
     box-shadow: 1px 1px 15px 2px #1b37b4;
 }

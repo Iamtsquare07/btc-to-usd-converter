@@ -1,5 +1,3 @@
-// import { sendTokensToUser } from "./app.js";
-
 async function queryApi() {
   try {
     const response = await axios.get(
@@ -52,8 +50,6 @@ function removeCurrencyAndNonNumeric(inputString) {
   const pattern = /[-+]?([0-9]*\.[0-9]+|[0-9]+)/g;
 
   const cleanedArray = inputString.match(pattern);
-
-  // Join the matched numbers and decimal points back into a single string
   const cleanedString = cleanedArray ? cleanedArray.join("") : "";
 
   return cleanedString;
@@ -70,7 +66,6 @@ function convertbtcToUsd() {
   }
   convertbtcToDollars(btcValue).then((dollar) => {
     dollars.value = dollar.toFixed(2);
-    // sendTokensToUser(1)
   });
 }
 btc.addEventListener("input", convertbtcToUsd);
@@ -83,7 +78,6 @@ function convertUsdTobtc() {
   }
   convertDollarsTobtc(dollarsValue).then((bitcoin) => {
     btc.value = bitcoin.toFixed(4);
-    // sendTokensToUser(1)
   });
 }
 dollars.addEventListener("input", convertUsdTobtc);
@@ -102,15 +96,15 @@ if (isMobileDevice()) {
     const menu = dropdown.querySelector(".mobile-dropdown-menu");
 
     trigger.addEventListener("click", function (event) {
-      event.preventDefault(); // Prevent the link from navigating
+      event.preventDefault();
 
       if (isClicked) {
-        menu.style.display = "none"; // Hide the menu
+        menu.style.display = "none";
       } else {
-        menu.style.display = "block"; // Show the menu
+        menu.style.display = "block";
       }
 
-      isClicked = !isClicked; // Toggle the menu visibility state
+      isClicked = !isClicked;
     });
   });
 } else {

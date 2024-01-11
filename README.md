@@ -1,3 +1,3 @@
-# btc-to-usd-converter v1.0.1
+# btc-to-usd-converter v1.0.3
 
-This tool allows users to convert Bitcoin price into USD.
+This tool allows users to convert Bitcoin prices into USD.
